@@ -1,0 +1,36 @@
+label {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-family: Arial, sans-serif;
+}
+label input[type="file"] {
+    font-size: 12px;
+    color: #fff;
+    outline: none;
+    width: calc(100% + 105px);
+    position: absolute; /* text-indent не действует на кнопку в FireFox спозиционируем кнопку за пределами инпута */
+    left: -105px;
+    top: 15px;
+    padding-right: 20px;
+    -moz-padding-start: 26px;
+    -moz-transform: translateY(-3px);
+}
+label .choose-field {
+    background: #34495e;
+    border-radius: 7px 0 0 7px;
+    height: 100%;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+}
+label .choose-btn {
+    width: 120px;
+    background: #27ae60;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    color: #ffff;
+    border-radius: 0 7px 7px 0;
+    cursor: pointer;
+}
